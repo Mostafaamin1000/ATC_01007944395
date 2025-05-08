@@ -31,6 +31,9 @@ const schema = new Schema({
     }
 })
 
+schema.post('init',function (doc){
+    if(doc.image) doc.image = "http://localhost:3000/uploads/events/" + doc.image
+    })
 
 export const Event = model('Event', schema)
 
