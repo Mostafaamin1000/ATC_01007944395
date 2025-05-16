@@ -1,8 +1,9 @@
 # 🎟️ Event Booking System (Backend Only)
 
-This project is a **Node.js ES6 backend-only application** for managing event bookings. It provides an API that allows users to register, log in, browse events, make bookings, and manage their accounts. Admins can manage users, events, and all bookings through the API.
+> 🏆 This backend project was created for a competition organized by **Areeb**, aiming to showcase backend development skills in a clear and structured way.  
+> It is designed to be understandable even by non-technical reviewers.
 
-> 🏆 This project is built for a competition and is designed to be clear and understandable even for non-technical reviewers.
+This project is a **Node.js ES6 backend-only application** for managing event bookings. It provides an API that allows users to register, log in, browse events, make bookings, and manage their accounts. Admins can manage users, events, and all bookings through the API.
 
 ---
 
@@ -44,13 +45,13 @@ This project is a **Node.js ES6 backend-only application** for managing event bo
 
 ### 🔐 Authentication Routes
 
-| Endpoint                          | Method | Description                        | Access      |
-|----------------------------------|--------|------------------------------------|-------------|
-| `/api/auth/signup`               | POST   | Register a new user                | Public      |
-| `/api/auth/signin`               | POST   | Login as user                      | Public      |
-| `/api/auth/changepassword`       | PATCH  | Change user password               | Authenticated |
-| `/api/auth/forget-password`      | POST   | Send reset password email          | Public      |
-| `/api/auth/reset-password/:token`| POST   | Reset password using token         | Public      |
+| Endpoint                          | Method | Description                        | Access         |
+|----------------------------------|--------|------------------------------------|----------------|
+| `/api/auth/signup`               | POST   | Register a new user                | Public         |
+| `/api/auth/signin`               | POST   | Login as user                      | Public         |
+| `/api/auth/changepassword`       | PATCH  | Change user password               | Authenticated  |
+| `/api/auth/forget-password`      | POST   | Send reset password email          | Public         |
+| `/api/auth/reset-password/:token`| POST   | Reset password using token         | Public         |
 
 ---
 
@@ -82,14 +83,24 @@ This project is a **Node.js ES6 backend-only application** for managing event bo
 
 | Endpoint                         | Method | Description                        | Access           |
 |----------------------------------|--------|------------------------------------|------------------|
-| `/api/users`                    | GET    | Get all users                      | Public           |
+| `/api/users`                    | GET    | Get all users                      | Public (can be restricted) |
 | `/api/user/:id`                 | GET    | Get specific user by ID            | User or Admin    |
 | `/api/update-user/:id`          | PUT    | Update user information            | Admin only       |
 | `/api/delete-user/:id`          | DELETE | Delete a user                      | Admin only       |
 
 ---
 
-## 🛠 How to Run the Project
+## 🌐 Live Deployment
+
+You can try the deployed backend on **Vercel**:
+
+🔗 [booking-azure.vercel.app](https://booking-azure.vercel.app)
+
+> This is a backend-only project, so you can use tools like **Postman** or **Thunder Client** to test the API endpoints.
+
+---
+
+## 🛠 How to Run the Project Locally
 
 ```bash
 git clone https://github.com/Mostafaamin1000/ATC_01007944395
