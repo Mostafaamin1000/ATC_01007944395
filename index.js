@@ -9,6 +9,7 @@ import {bootstrap} from './src/Modules/bootstrap.js'
 import { AppError } from './src/utils/appError.js';
 import { globalError } from './src/middlewares/globalError.js';
 dotenv.config()
+DBConnect()
 const app = express()
 const port =process.env.PORT ||  3000
 app.use(express.json())
@@ -16,6 +17,10 @@ app.use('/uploads', express.static('uploads'));
 app.use(cors())
 bootstrap(app)
 
+
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "API is running 😎" })
+})
 
 //! for unfound Routes 
 app.use((req,res,next)=>{

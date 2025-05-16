@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { signin, signup } from "./auth.controller.js";
+import { changeUserPassword, forgetPassword, resetPassword, signin, signup } from "./auth.controller.js";
 import { checkEmail } from "../../middlewares/checkemail.js";
 import { Validate } from "../../middlewares/validate.js";
 import { changePasswordVal, signinVal, signupVal } from "./auth.validation.js";
