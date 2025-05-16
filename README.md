@@ -1,4 +1,4 @@
-# 🎟️ ATC Event Booking System (Backend Only)
+# 🎟️ Event Booking System (Backend Only)
 
 This project is a **Node.js ES6 backend-only application** for managing event bookings. It provides an API that allows users to register, log in, browse events, make bookings, and manage their accounts. Admins can manage users, events, and all bookings through the API.
 
